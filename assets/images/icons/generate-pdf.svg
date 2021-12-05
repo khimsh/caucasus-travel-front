@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.444" height="71.685" viewBox="0 0 61.444 71.685">
+  <g id="generate-pdf" transform="translate(-4.5 -2.25)">
+    <path id="Path_11" data-name="Path 11" d="M52.833,27V37.241H11.87V27H6.75V37.241a5.12,5.12,0,0,0,5.12,5.12H52.833a5.12,5.12,0,0,0,5.12-5.12V27Z" transform="translate(2.87 31.574)"/>
+    <path id="Path_12" data-name="Path 12" d="M37.977,33.671l-3.621-3.621-6.62,6.622V15.75h-5.12V36.673L16,30.053l-3.621,3.618,12.8,12.8Z" transform="translate(10.046 17.222)" fill="#ed1f24"/>
+    <path id="Path_13" data-name="Path 13" d="M40.111,7.37V2.25H24.75v25.6h5.12V17.611h7.681v-5.12H29.87V7.37Z" transform="translate(25.833 0)"/>
+    <path id="Path_14" data-name="Path 14" d="M24.866,27.852H14.625V2.25H24.866a7.687,7.687,0,0,1,7.681,7.681V20.171a7.687,7.687,0,0,1-7.681,7.681Zm-5.12-5.12h5.12a2.562,2.562,0,0,0,2.56-2.56V9.931a2.562,2.562,0,0,0-2.56-2.56h-5.12Z" transform="translate(12.917 0)"/>
+    <path id="Path_15" data-name="Path 15" d="M17.3,2.25H4.5v25.6H9.62V20.171H17.3a5.127,5.127,0,0,0,5.12-5.12V7.37A5.125,5.125,0,0,0,17.3,2.25ZM9.62,15.051V7.37H17.3l0,7.681Z" transform="translate(0 0)"/>
+  </g>
+</svg>

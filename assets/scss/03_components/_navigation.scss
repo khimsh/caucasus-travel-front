@@ -1,0 +1,31 @@
+.nav {
+  padding-left: 30px;
+  padding-right: 20px;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 28px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: #ed1f24;
+    }
+
+    &--active {
+      color: #ed1f24;
+    }
+  }
+}
