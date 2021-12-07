@@ -1,13 +1,24 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   width: 100%;
+  background-color: #333333;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__nav-btn {
+    margin: 0 20px 0 auto;
+    width: 28px;
+    height: 32px;
+
+    @media only screen and (min-width: 1366px) {
+      display: none;
+    }
   }
 }
 

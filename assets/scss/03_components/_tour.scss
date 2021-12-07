@@ -1,0 +1,131 @@
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.tour {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__about {
+    flex-shrink: 0;
+    padding-left: 19px;
+    width: 633px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dfe4eb;
+  }
+
+  &__title {
+    font-family: 'Avenir Next Demi', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+    font-style: italic;
+    color: #ed1f24;
+    // white-space: nowrap;
+  }
+
+  &__size {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+
+    background-color: #dfe4eb;
+  }
+
+  &__countries {
+    flex-shrink: 0;
+    display: flex;
+    gap: 10px;
+
+    & > div {
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-content: center;
+
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #000;
+      text-transform: uppercase;
+
+      background-color: #dfe4eb;
+    }
+  }
+
+  &__check {
+    flex-shrink: 1;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    background-color: #ed7d31;
+
+    p {
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .months {
+    flex-shrink: 1;
+  }
+}
+
+.months {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  &__name {
+    font-family: 'Avenir Next Demi', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-transform: capitalize;
+  }
+
+  &__color {
+    width: 30px;
+    height: 30px;
+
+    &--100 {
+      background: var(--clr-green-100);
+    }
+
+    &--200 {
+      background: var(--clr-green-200);
+    }
+
+    &--700 {
+      background: var(--clr-green-700);
+    }
+  }
+}

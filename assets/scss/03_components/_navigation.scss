@@ -1,17 +1,39 @@
 .nav {
-  padding-left: 30px;
-  padding-right: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: block;
+  background: #333;
+
+  @media only screen and (min-width: 1366px) {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: auto;
+    background: transparent;
+  }
 
   &__list {
     list-style-type: none;
     display: flex;
-    gap: 28px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      gap: 28px;
+      padding: unset;
+    }
   }
 
-  &__item {
-  }
+  // &__item {
+  // }
 
   &__link {
+    display: block;
     font-family: 'Avenir Next', sans-serif;
     font-size: 14px;
     font-weight: 400;
