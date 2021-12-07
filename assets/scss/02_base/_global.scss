@@ -526,3 +526,103 @@ button {
     height: 80px;
   }
 }
+
+.our-company-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.our-company {
+  display: grid;
+  grid-template-columns: 316px 1fr;
+  column-gap: 30px;
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__texts {
+    p {
+      font-family: var(--f-avenir);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--clr-black);
+      line-height: 1.5;
+
+      &:not(:last-of-type) {
+        margin-bottom: 40px;
+      }
+
+      i {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.our-company-featured {
+  margin-bottom: 57px;
+  width: 996px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+
+  figure {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 30px;
+
+    figcaption {
+      text-align: right;
+    }
+  }
+
+  &__quote {
+    p {
+      &:first-of-type {
+        margin-bottom: 10px;
+        font-family: var(--f-avenir-demi);
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--clr-black);
+      }
+
+      &:nth-of-type(2) {
+        font-family: var(--f-avenir);
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--clr-black);
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    font-family: var(--f-avenir-pro);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--clr-black);
+  }
+
+  &__job-title {
+    font-family: var(--f-avenir);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--clr-black);
+  }
+}
+
+.stylized {
+  font-family: 'Mistral' !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  color: #254e7c !important;
+}
