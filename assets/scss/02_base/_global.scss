@@ -131,6 +131,46 @@ button {
   }
 }
 
+.page-title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-family: var(--f-avenir-demi);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--clr-black);
+  text-align: center;
+  text-transform: uppercase;
+
+  strong {
+    font-family: var(--f-avenir-pro);
+    font-weight: 700;
+  }
+}
+
+.page-title-block {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 13px 0;
+  font-family: var(--f-avenir-demi);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--clr-black);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e7e6e6;
+}
+
+.team-title {
+  margin-top: 24px;
+  margin-bottom: 15px;
+  font-family: var(--f-avenir-demi);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--clr-black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .dmc-hero {
   margin: 70px 0 64px 0;
 
@@ -383,5 +423,106 @@ button {
     img {
       margin-left: 24px;
     }
+  }
+}
+
+.commitments {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.commitment {
+  display: grid;
+  grid-template-columns: 316px 673px 316px;
+  column-gap: 32px;
+
+  &__logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__texts {
+    h2,
+    h3 {
+      margin-bottom: 20px;
+      font-family: var(--f-avenir-pro);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--clr-black);
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-family: var(--f-avenir);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--clr-black);
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.awards-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  figure {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+  }
+
+  .awards {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.affiliations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-block {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 271px;
+  display: grid;
+  place-content: center;
+  background-color: #828282;
+
+  span {
+    font-family: var(--f-avenir);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--clr-white);
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100px;
+    height: 80px;
   }
 }

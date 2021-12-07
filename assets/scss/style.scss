@@ -3,8 +3,10 @@
 @use '02_base/container';
 @use '02_base/global';
 @use '02_base/utilities';
+@use '02_base/misc';
 
 @use '03_components/header';
 @use '03_components/navigation';
 @use '03_components/cards';
+@use '03_components/team';
 @use '03_components/tour';

@@ -3,6 +3,19 @@
   margin: 0 auto;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  column-gap: 44px;
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(4, 316px);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
 .tour-cards {
   display: flex;
   flex-direction: column;
@@ -29,4 +42,28 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 38px;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  column-gap: 44px;
+  row-gap: 30px;
+  grid-auto-rows: 200px;
+
+  & > div {
+    background: #254e7c;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  .span-4 {
+    grid-column: span 4;
+  }
 }
