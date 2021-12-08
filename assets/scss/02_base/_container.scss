@@ -9,6 +9,13 @@
   column-gap: 44px;
 }
 
+.grid-articles {
+  display: grid;
+  grid-template-columns: repeat(4, 295px);
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
 .grid-team {
   display: grid;
   grid-template-columns: repeat(4, 316px);
