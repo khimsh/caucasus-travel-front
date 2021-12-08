@@ -788,3 +788,16 @@ button {
     color: var(--clr-white);
   }
 }
+
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+}
