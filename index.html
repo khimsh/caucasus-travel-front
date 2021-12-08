@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caucasus Travel</title>
+    <title>Caucasus Travel | Home</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -13,48 +13,80 @@
     <script defer src="assets/js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--fixed">
       <div class="container">
         <a href="/" class="logo" aria-label="Caucasus Travel Logo">
           <img src="assets/images/logo.png" alt="Caucasus Travel" />
         </a>
 
-        <nav class="nav">
+        <nav class="nav" data-nav>
+          <button class="header__nav-btn header__nav-btn--close" data-close-nav>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </button>
+
           <ul class="nav__list">
-            <li class="nav__item"><a href="/" class="nav__link">home</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--active">JOIN US</a>
+              <a href="/" class="nav__link nav__link--active">home</a>
             </li>
             <li class="nav__item">
-              <a href="dmc-south-caucasus.html" class="nav__link"
+              <a href="#" class="nav__link">JOIN US</a>
+            </li>
+            <li class="nav__item">
+              <a href="/dmc-south-caucasus.html" class="nav__link"
                 >DMC-SOUTH CAUCAUSUS</a
               >
             </li>
             <li class="nav__item">
-              <a href="experiences.html" class="nav__link">EXPERIENCES</a>
+              <a href="/experiences.html" class="nav__link">EXPERIENCES</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">TOURS</a></li>
+            <li class="nav__item">
+              <a href="/tours.html" class="nav__link">TOURS</a>
+            </li>
             <li class="nav__item">
               <a href="#" class="nav__link">INCENTVES & EVENTS</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">SERVICES</a>
+              <a href="/services.html" class="nav__link">SERVICES</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">ABOUT US</a>
+              <a href="about-us.html" class="nav__link">ABOUT US</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">CONTACT</a></li>
+            <li class="nav__item">
+              <a href="/contact.html" class="nav__link">CONTACT</a>
+            </li>
           </ul>
         </nav>
 
-        <button class="header__nav-btn" aria-label="open navigation">
-          <img src="assets/images/icons/bars-solid.svg" alt="" />
+        <button
+          class="header__nav-btn"
+          data-open-nav
+          aria-label="open navigation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
         </button>
 
         <ul class="language">
           <li>
             <a href="#">
-              <img src="assets/images/flags/Image 2.png" alt="" />
+              <img src="assets/images/flags/uk.png" alt="" />
             </a>
           </li>
         </ul>
@@ -81,89 +113,75 @@
           </p>
 
           <p>G2G Go To Georgia</p>
+
+          <button class="g2g">
+            <span class="g2g__top">G2G</span>
+            <span class="g2g__bottom">Gate</span>
+          </button>
         </div>
 
-        <h1 class="hero__title">
-          <span>Welcome to Caucasus</span>
-          <span>visit</span>
-          <span><strong>Georgia</strong>, Armenia, Azerbaijan</span>
-        </h1>
+        <div class="hero__main">
+          <h1 class="hero__title">
+            <span>Welcome to Caucasus</span>
+            <span>visit</span>
+            <span><strong>Georgia</strong>, Armenia, Azerbaijan</span>
+          </h1>
 
-        <div class="scroll" aria-label="scroll indicator"></div>
-
-        <div class="g2g">
-          <span class="g2g__top">G2G</span>
-          <span class="g2g__bottom">Gate</span>
+          <div class="scroll" aria-label="scroll indicator">
+            <div class="scroll-dot"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <div class="strip">
       <div class="container">
-        <p class="strip__text">
+        <p class="text-mistral text-lg text-blue">
           The first choice Tour Operator in the South Caucasus
         </p>
 
         <div class="strip__languages">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="31.994"
-              height="32"
-              viewBox="0 0 31.994 32"
-            >
+          <div class="strip__languages__title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.994 32">
               <path
-                id="FontAwsome_globe_"
-                data-name="FontAwsome (globe)"
                 d="M21.031,17.5C20.125,11.919,17.987,8,15.5,8s-4.625,3.919-5.531,9.5ZM9.5,23.5a39.174,39.174,0,0,0,.206,4H21.287a39.174,39.174,0,0,0,.206-4,39.175,39.175,0,0,0-.206-4H9.706A39.174,39.174,0,0,0,9.5,23.5Zm20.294-6a15.533,15.533,0,0,0-9.875-8.85,21.094,21.094,0,0,1,3.125,8.85ZM11.075,8.65A15.522,15.522,0,0,0,1.206,17.5h6.75a21.009,21.009,0,0,1,3.119-8.85ZM30.462,19.5H23.294c.131,1.312.206,2.656.206,4s-.075,2.688-.206,4h7.163a15.366,15.366,0,0,0,.538-4,15.635,15.635,0,0,0-.531-4ZM7.5,23.5c0-1.344.075-2.688.206-4H.538a15.152,15.152,0,0,0,0,8H7.7C7.575,26.187,7.5,24.844,7.5,23.5Zm2.469,6c.906,5.581,3.044,9.5,5.531,9.5s4.625-3.919,5.531-9.5Zm9.956,8.85A15.548,15.548,0,0,0,29.8,29.5H23.05A21.094,21.094,0,0,1,19.925,38.35ZM1.206,29.5a15.533,15.533,0,0,0,9.875,8.85A21.094,21.094,0,0,1,7.956,29.5H1.206Z"
                 transform="translate(0.5 -7.5)"
-                fill="none"
-                stroke="#000"
-                stroke-width="1"
               />
             </svg>
-            <span>LANGUAGES</span>
+            <span class="text-pro">LANGUAGES</span>
           </div>
 
           <ul>
             <li>
+              <a href="#"><img src="assets/images/flags/uk.png" alt="" /></a>
+            </li>
+            <li>
               <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
+                ><img src="assets/images/flags/germany.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/images/flags/japan.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/flags/france.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/images/flags/spain.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/images/flags/it.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/flags/russia.png" alt=""
               /></a>
             </li>
             <li>
               <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/images/flags/Image 2.png" alt=""
+                ><img src="assets/images/flags/portugal.png" alt=""
               /></a>
             </li>
           </ul>
@@ -173,73 +191,107 @@
 
     <section>
       <div class="container">
-        <div>
+        <div class="grid-1-2-1">
           <div>
-            <p>Join us on the road of Dixcovery and Excitement</p>
-            <img src="assets/images/Picture6.jpg" alt="" />
-            <img src="assets/images/Picture9.jpg" alt="" />
+            <div class="bg-gold banner mb-4">
+              <p>
+                Join us <br />
+                on the road of <br />
+                Discovery and Excitement
+              </p>
+              <img src="assets/images/Picture6.png" alt="" />
+              <img src="assets/images/Picture9.png" alt="" />
+            </div>
+            <img src="assets/images/logo-dark.png" alt="" />
           </div>
-          <img src="assets/images/logo-dark.png" alt="" />
-        </div>
 
-        <div>
-          <p>Join us on the road of Discovery and Excitement…</p>
-          <p>
-            This was our, very first slogan created in 1991, when we decided
-            introduce our country to just opened world and invite foreign guests
-            to share the riches and beauty of Georgia and the Caucasus.
-            Established in 1991, at that very time of changes and challenges,
-            Caucasus Travel was first Inbound Tour Operator and Destination
-            Management Company operating in newly independent, former soviet
-            countries of Georgia, Armenia and Azerbaijan. Since that, Caucasus
-            Travel remains The First Choice Tour Operator in the South Caucasus,
-            doe to professionalism, responsablity, creativity, sincerity and
-            uncompromised commitment to quality of services. Yes, it has been 30
-            years, that we have pleasure to welcome very many thousends of
-            lovely people, true travelers of different nationalities and being
-            able to enrich them with the opportunity to experience unique
-            moments of discovery and excitement of culture, history, nature,
-            traditions, human relations and hospitality of Georgia and Caucasian
-            countries. Great practice, constant development, innovation,
-            training keeps Caucasus Travel and its growing team in top
-            professional shape and as always - enthusiastic. We take pleasure in
-            our business and will be genuinely happy and proud to be your host.
-            Welcome.
-          </p>
-          <p>The first choice Tour Operator in the South Caucasus</p>
-          <p>Caucasus Travel, 2021</p>
-        </div>
+          <div class="text-md text-w-md">
+            <p class="mb-1">Join us on the road of Discovery and Excitement…</p>
+            <p class="mb-1">
+              This was our, very first slogan created in 1991, when we decided
+              introduce our country to just opened world and invite foreign
+              guests to share the riches and beauty of Georgia and the Caucasus.
+            </p>
 
-        <div>
-          <figure>
-            <img src="assets/images/Picture8.jpg" alt="" />
-            <figcaption>
-              Our photographer fried shot the photo in 1998 by occasion Since
-              that this little girl and her cute Caucasian Sheppard puppy became
-              our welcome note
-            </figcaption>
-          </figure>
+            <p class="mb-1">
+              Established in 1991, at that very time of changes and challenges,
+              Caucasus Travel was first Inbound Tour Operator and Destination
+              Management Company operating in newly independent, former soviet
+              countries of Georgia, Armenia and Azerbaijan. Since that, Caucasus
+              Travel remains The First Choice Tour Operator in the South
+              Caucasus, doe to professionalism, responsablity, creativity,
+              sincerity and uncompromised commitment to quality of services.
+            </p>
+
+            <p class="mb-1">
+              Yes, it has been 30 years, that we have pleasure to welcome very
+              many thousends of lovely people, true travelers of different
+              nationalities and being able to enrich them with the opportunity
+              to experience unique moments of discovery and excitement of
+              culture, history, nature, traditions, human relations and
+              hospitality of Georgia and Caucasian countries.
+            </p>
+
+            <p class="mb-1">
+              Great practice, constant development, innovation, training keeps
+              Caucasus Travel and its growing team in top professional shape and
+              as always - enthusiastic.
+            </p>
+
+            <p class="mb-1">
+              We take pleasure in our business and will be genuinely happy and
+              proud to be your host.
+            </p>
+
+            <p class="mb-1">Welcome.</p>
+
+            <p class="text-decorative tar mb-2">
+              The first choice Tour Operator in the South Caucasus
+            </p>
+            <p class="text-pro text-w-normal tar">Caucasus Travel, 2021</p>
+          </div>
+
+          <div>
+            <figure>
+              <img class="mb-4" src="assets/images/Picture8.jpg" alt="" />
+              <figcaption class="text-w-md text-xs">
+                Our photographer fried shot the photo in 1998 by occasion <br />
+                Since that this little girl and her cute Caucasian Sheppard
+                puppy became our welcome note
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="bg-gray p-section">
       <div class="container">
-        <h2>Let us invite you to our Home Country</h2>
+        <h2 class="text-pro text-md mb-5">
+          Let us invite you to our Home Country
+        </h2>
 
-        <p>
-          Georgia - an amazing country, a cluster of cultures and religions,
-          fascinating landscapes and ancient history. The country where everyone
-          can find something to their liking – from the snowy mountain peaks to
-          the lush subtropical shores, from deserts to deep forests, and from
-          the modern cities to enchanting villages. Located on the edge of
-          Europe and Asia, at the crossroad of ancient trade routes and
-          legendary Silk Road Georgia boasts both Mediterranean and European
-          Culture. Discover, learn and explore local cuisine and the variety of
-          wines, cultural heritage and mystical legends, the beauty of nature
-          and warmth of hospitality, harmony of polyphonic songs and fiery
-          dances.
-        </p>
+        <div class="text-demi text-md text-gray">
+          <p class="mb-1">
+            Georgia - an amazing country, a cluster of cultures and religions,
+            fascinating landscapes and ancient history. The country where
+            everyone can find something to their liking – from the snowy
+            mountain peaks to the lush subtropical shores, from deserts to deep
+            forests, and from the modern cities to enchanting villages.
+          </p>
+
+          <p class="mb-1">
+            Located on the edge of Europe and Asia, at the crossroad of ancient
+            trade routes and legendary Silk Road Georgia boasts both
+            Mediterranean and European Culture.
+          </p>
+
+          <p class="mb-1">
+            Discover, learn and explore local cuisine and the variety of wines,
+            cultural heritage and mystical legends, the beauty of nature and
+            warmth of hospitality, harmony of polyphonic songs and fiery dances.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -247,47 +299,61 @@
       <img src="assets/images/picture11111.jpg" alt="" />
     </section>
 
-    <section>
-      <h2>
-        <span> News Board </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="57.3"
-          height="36"
-          viewBox="0 0 57.3 36"
-        >
-          <path
-            id="arrow-shift-down"
-            d="M47.454,7.269V21.116h11.02a2.461,2.461,0,0,1,2.034.855,1.044,1.044,0,0,1-.477,1.508L33.583,40.094a3.2,3.2,0,0,1-3.117,0L4.02,23.479a1.044,1.044,0,0,1-.477-1.509,2.462,2.462,0,0,1,2.036-.854H16.6V7.269C16.6,5.74,18.573,4.5,21.006,4.5H43.046c2.433,0,4.4,1.241,4.408,2.769ZM32.026,37.158,53.152,23.885H43.046V7.269H21.006V23.885H10.9Z"
-            transform="translate(-3.375 -4.5)"
-            fill="#fff"
-          />
-        </svg>
-      </h2>
+    <section class="news-board">
+      <div class="news-board__heading">
+        <div class="container">
+          <h2 class="text-demi">
+            <span> News Board </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="57.3"
+              height="36"
+              viewBox="0 0 57.3 36"
+            >
+              <path
+                id="arrow-shift-down"
+                d="M47.454,7.269V21.116h11.02a2.461,2.461,0,0,1,2.034.855,1.044,1.044,0,0,1-.477,1.508L33.583,40.094a3.2,3.2,0,0,1-3.117,0L4.02,23.479a1.044,1.044,0,0,1-.477-1.509,2.462,2.462,0,0,1,2.036-.854H16.6V7.269C16.6,5.74,18.573,4.5,21.006,4.5H43.046c2.433,0,4.4,1.241,4.408,2.769ZM32.026,37.158,53.152,23.885H43.046V7.269H21.006V23.885H10.9Z"
+                transform="translate(-3.375 -4.5)"
+                fill="#fff"
+              />
+            </svg>
+          </h2>
+        </div>
+      </div>
 
-      <div>
-        <div>
-          <img src="assets/images/Image 4.jpg" alt="" />
-        </div>
-        <div>
-          <p>Covid-19 Regulations GEORGIA</p>
-          <a href="#">Click for more info</a>
-        </div>
-        <div>
-          <p>Georgian government...</p>
-        </div>
-        <div>
-          <p>Visit as on 2021 Travel Fairs</p>
-        </div>
-        <div>
-          <p>We announce GUARANTEED DEPARTURE TOURS -2021 July - November</p>
-          <a href="#">Click to Visit Page</a>
+      <div class="container">
+        <div class="news-board__grid">
+          <div>
+            <img src="assets/images/Image 4.jpg" alt="" />
+          </div>
+
+          <div class="span-y-full bg-gray">
+            <p>Georgian government...</p>
+          </div>
+
+          <div class="bg-gray">
+            <p>Visit as on 2021 Travel Fairs</p>
+          </div>
+
+          <div class="bg-gray">
+            <p class="text-demi">Covid-19 Regulations GEORGIA</p>
+            <a href="#" class="text-demi text-xs">Click for more info</a>
+          </div>
+
+          <div class="bg-orange">
+            <p class="text-white">
+              We announce GUARANTEED DEPARTURE TOURS -2021 July - November
+            </p>
+            <a href="#">Click to Visit Page</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>Culture, Nature, Adventure, and more… since 1991</p>
-    </footer>
+    <div class="bg-gold content-center py-sm">
+      <p class="text-demi text-white text-lg">
+        Culture, Nature, Adventure, and more… since 1991
+      </p>
+    </div>
   </body>
 </html>

@@ -1,0 +1,73 @@
+.contact-form {
+  label {
+    margin-bottom: 11px;
+    display: block;
+    font-family: var(--f-avenir-demi);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--clr-black);
+    text-align: center;
+
+    small {
+      color: #ed1f24;
+    }
+  }
+}
+
+.contact-section {
+  padding: 57px 0 37px;
+  background-color: #d0cece;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 60px 60px repeat(4, 270px);
+    gap: 27px;
+
+    .span-all {
+      grid-column: 1/-1;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 60px;
+    padding: 0 14px;
+    font-family: var(--f-avenir);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-black);
+  }
+
+  textarea {
+    width: 100%;
+    height: 172px;
+    padding: 14px;
+    font-family: var(--f-avenir);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-black);
+  }
+}
+
+.request-tour {
+  &__grid {
+    display: grid;
+    grid-template-columns: 436px 528px 242px;
+    column-gap: 66px;
+  }
+
+  input[type='checkbox'] {
+    width: 60px;
+    height: 60px;
+  }
+
+  .checkboxes {
+    display: flex;
+    gap: 34px;
+  }
+}
+
+.info-box {
+  padding: 15px 24px;
+  background-color: #f8cbad;
+}

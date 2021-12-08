@@ -1,9 +1,20 @@
 .header {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
   width: 100%;
   background-color: #333333;
+
+  z-index: 100000;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &--colored {
+    background-color: #333333;
+  }
 
   .container {
     display: flex;
@@ -16,7 +27,26 @@
     width: 28px;
     height: 32px;
 
-    @media only screen and (min-width: 1366px) {
+    &--close {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+
+      svg {
+        display: block;
+        width: 32px;
+        height: 32px;
+        fill: var(--clr-white);
+      }
+    }
+
+    svg {
+      transform: translateY(-3px);
+      display: block;
+      fill: var(--clr-white);
+    }
+
+    @media only screen and (min-width: 1367px) {
       display: none;
     }
   }

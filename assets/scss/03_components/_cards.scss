@@ -115,10 +115,21 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #808080;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--clr-white);
+      transition: all 0.2s ease-in-out;
+    }
   }
 
   &__container {
-    margin-top: 18px;
+    padding-top: 18px;
   }
 
   &__tour-heading {
@@ -137,8 +148,9 @@
   }
 
   &__hidden {
-    // max-height: 0;
-    // overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
   }
 }
 

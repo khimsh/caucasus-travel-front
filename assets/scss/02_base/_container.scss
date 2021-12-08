@@ -67,3 +67,9 @@
     grid-column: span 4;
   }
 }
+
+.grid-1-2-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 30px;
+}

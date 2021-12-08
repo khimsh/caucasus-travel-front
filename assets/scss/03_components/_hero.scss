@@ -1,0 +1,77 @@
+.hero {
+  padding: 90px 0 35px 0;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  &__main {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__anniversary {
+    float: left;
+  }
+
+  &__texts {
+    margin-top: 76px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+    p:first-child {
+      margin-bottom: 53px;
+      font-weight: 500;
+    }
+
+    p:last-child {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 51px;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  // transforms
+  .g2g {
+    position: absolute;
+    bottom: 70px;
+    right: calc((100vw - 1338px) / 2);
+  }
+}
+
+.scroll {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 40px;
+  height: 72px;
+  border: 1px solid var(--clr-white);
+  border-radius: 20px;
+
+  &-dot {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: var(--clr-white);
+    transform: translate(-50%, 0);
+  }
+}
