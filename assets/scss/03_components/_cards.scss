@@ -70,6 +70,10 @@
 }
 
 .tour-card {
+  &--incentives {
+    margin-bottom: 80px;
+  }
+
   &__shown {
     display: flex;
     gap: 36px;
@@ -155,6 +159,60 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
+  }
+}
+
+.incentive-card {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 730px 1fr;
+  column-gap: 30px;
+
+  &__image {
+    position: relative;
+
+    figcaption {
+      position: absolute;
+      top: 90px;
+      left: 32px;
+      font-family: var(--f-avenir-demi);
+      font-size: 50px;
+      font-weight: 600;
+      color: var(--clr-white);
+      max-width: 14ch;
+    }
+  }
+
+  .divider {
+    margin-block: 30px;
+  }
+}
+
+.project-card {
+  figure {
+    margin-bottom: 20px;
+    width: 302px;
+    height: 200px;
+    overflow: hidden;
+    background: #254e7c;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-family: var(--f-avenir-pro);
+    font-weight: 700;
+    color: var(--clr-black);
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3a3838;
   }
 }
 

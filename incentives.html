@@ -97,7 +97,7 @@
 
     <div class="container">
       <!-- ტურის ქარდი -->
-      <div class="tour-card">
+      <div class="tour-card tour-card--incentives" data-dropdown>
         <div class="tour-card__shown">
           <figure class="tour-card__image">
             <img src="assets/images/Image 29.png" alt="" />
@@ -105,7 +105,9 @@
           </figure>
 
           <div class="tour-card__content">
-            <h3>Georgia – Perfect Destination for Incentive Travel</h3>
+            <h3 class="mb-2">
+              Georgia – Perfect Destination for Incentive Travel
+            </h3>
             <p class="tour-card__description">
               The numerous UNESCO sites, museum and religious treasures,
               impressive rock cut monasteries and cave towns as well as
@@ -116,27 +118,18 @@
               and museums.
             </p>
 
-            <button class="tour-card__btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-              >
+            <button class="tour-card__btn" data-dropdown-trigger>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
-                  id="Path_7"
-                  data-name="Path 7"
-                  d="M4.5,0A4.5,4.5,0,0,0,0,4.5v27A4.5,4.5,0,0,0,4.5,36h27A4.5,4.5,0,0,0,36,31.5V4.5A4.5,4.5,0,0,0,31.5,0ZM19.125,11.25a1.125,1.125,0,0,0-2.25,0V22.034L12.046,17.2A1.126,1.126,0,0,0,10.453,18.8l6.75,6.75a1.125,1.125,0,0,0,1.593,0l6.75-6.75A1.126,1.126,0,1,0,23.953,17.2l-4.828,4.831Z"
-                  fill="gray"
-                  fill-rule="evenodd"
-                />
+                  d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+                ></path>
               </svg>
             </button>
           </div>
         </div>
 
-        <div class="tour-card__hidden">
-          <div class="tour-card__container">
+        <div class="tour-card__hidden" data-dropdown-content>
+          <div class="tour-card__container" data-dropdown-height>
             <div class="images-grid">
               <div class="image"></div>
               <div class="image"></div>
@@ -156,8 +149,8 @@
       </div>
       <!-- ტურის ქარდის დასასრული -->
 
-      <div>
-        <figure>
+      <div class="incentive-card">
+        <figure class="incentive-card__image">
           <img src="assets/images/Image 42.png" alt="" />
           <figcaption>SPECIAL PROJECTS</figcaption>
         </figure>
@@ -169,13 +162,15 @@
             RALLYES & CARAVANS
           </h3>
 
-          <p>
+          <div class="divider"></div>
+
+          <p class="text-md">
             We have years of experience in organizing, supporting and serving
             many types off special projects, Filming, Rally, Caravans, Sport
             Events.
           </p>
 
-          <p>
+          <p class="text-md">
             We are so glad to meet all those outstanding and professional people
             and have a chance to help them to realize their very interesting
             projects. Our portfolio is full of remarkable memories.
@@ -184,10 +179,10 @@
       </div>
 
       <section>
-        <h2>WORLDWIDE PROJECTS WE ARE PROUD OF</h2>
+        <h2 class="mb-1">WORLDWIDE PROJECTS WE ARE PROUD OF</h2>
 
         <div class="grid-4">
-          <div>
+          <div class="project-card">
             <figure>
               <img src="" alt="" />
             </figure>
@@ -202,7 +197,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="project-card">
             <figure>
               <img src="" alt="" />
             </figure>
@@ -219,7 +214,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="project-card">
             <figure>
               <img src="" alt="" />
             </figure>
@@ -236,7 +231,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="project-card">
             <figure>
               <img src="" alt="" />
             </figure>
@@ -255,8 +250,8 @@
 
       <div class="divider"></div>
 
-      <div class="grid-4">
-        <div>
+      <div class="grid-4 mb-7">
+        <div class="project-card">
           <figure>
             <img src="" alt="" />
           </figure>
@@ -270,7 +265,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="project-card">
           <figure>
             <img src="" alt="" />
           </figure>
@@ -287,7 +282,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="project-card">
           <figure>
             <img src="" alt="" />
           </figure>
@@ -304,7 +299,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="project-card">
           <figure>
             <img src="" alt="" />
           </figure>
