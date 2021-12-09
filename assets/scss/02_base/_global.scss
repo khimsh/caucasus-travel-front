@@ -126,149 +126,8 @@ button {
   text-transform: uppercase;
 }
 
-.dmc-hero {
-  margin: 70px 0 64px 0;
-
-  &__heading {
-    margin-bottom: 50px;
-    font-family: var(--f-avenir-demi);
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--clr-black);
-    text-align: center;
-    text-transform: uppercase;
-
-    strong {
-      font-family: var(--f-avenir-pro);
-      font-weight: 700;
-    }
-  }
-
-  &__image {
-    margin-block: 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__body {
-    margin: 0 auto;
-    max-width: 672px;
-    font-family: var(--f-avenir);
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--clr-black);
-    text-align: center;
-  }
-
-  &__links {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-
-    a {
-      width: 221px;
-      height: 63px;
-      display: grid;
-      place-content: center;
-      background: var(--clr-white);
-      box-shadow: 0 5px 11px rgba(0, 0, 0, 0.41);
-
-      font-family: var(--f-avenir);
-      font-size: 27px;
-      font-weight: 500;
-      color: var(--clr-black);
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-  }
-}
-
-.dmc-country {
-  &.georgia {
-    --about-img: 424px;
-  }
-
-  &__title {
-    font-family: var(--f-avenir-demi);
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 16px;
-
-    position: relative;
-
-    div {
-      text-align: center;
-    }
-
-    img {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  &__title-3 {
-    margin-bottom: 40px;
-    font-family: var(--f-avenir-demi);
-    font-size: 30px;
-    font-weight: 600;
-    color: #803957;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &__banner {
-    margin-bottom: 47px;
-    width: 100%;
-    height: 580px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__about {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: var(--about-img, 632px) 1fr;
-    column-gap: 32px;
-
-    &__images {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-
-      p {
-        font-weight: 500;
-        line-height: 1.5;
-      }
-    }
-
-    &__section {
-      display: flex;
-      gap: 55px;
-    }
-  }
-}
-
-.dmc-slider-wrap {
-  margin-top: 20px;
-  padding: 30px 0 70px 0;
-  background: #c3d5f2;
-}
-
 .general-info {
+  margin-bottom: 60px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -286,7 +145,7 @@ button {
   }
 
   &__heading {
-    margin: 60px auto 50px auto;
+    margin: 0 auto 50px auto;
     font-family: var(--f-avenir-demi);
     font-size: 30px;
     font-weight: 600;
@@ -392,6 +251,7 @@ button {
 }
 
 .cuisine {
+  margin-top: 40px;
   padding: 20px 0;
   background-color: #dfe4eb;
 
