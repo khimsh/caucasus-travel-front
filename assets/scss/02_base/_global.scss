@@ -262,6 +262,12 @@ button {
   }
 }
 
+.dmc-slider-wrap {
+  margin-top: 20px;
+  padding: 30px 0 70px 0;
+  background: #c3d5f2;
+}
+
 .general-info {
   height: 100%;
   display: flex;
@@ -777,6 +783,12 @@ button {
 
   &__technicalities {
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .span-2 {
+      grid-column: 1/-1;
+    }
 
     h3 {
       padding: 8px 0;

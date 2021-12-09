@@ -1,3 +1,5 @@
+@use '01_plugins/slick';
+
 @use '02_base/fonts';
 @use '02_base/variables';
 @use '02_base/container';
@@ -13,4 +15,5 @@
 @use '03_components/team';
 @use '03_components/tour';
 @use '03_components/services';
+@use '03_components/sliders';
 @use '03_components/footer';
