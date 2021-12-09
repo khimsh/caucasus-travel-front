@@ -1,6 +1,15 @@
 .container {
-  max-width: 1338px;
-  margin: 0 auto;
+  padding: 0 15px;
+
+  @media only screen and (min-width: 992px) {
+    padding: 0 50px;
+  }
+
+  @media only screen and (min-width: 1367px) {
+    max-width: 1338px;
+    margin: 0 auto;
+    padding: unset;
+  }
 }
 
 .grid-4 {
