@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.flex-col {
+  @extend .flex;
+  flex-direction: column;
+}
+
 .content-center {
   @extend .flex;
 
@@ -129,6 +134,10 @@
 
 .text-blue {
   color: #254e7c !important;
+}
+
+.text-gold {
+  color: #9e8959 !important;
 }
 
 .text-decorative {
