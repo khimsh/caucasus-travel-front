@@ -12,6 +12,11 @@
     background: #707070;
   }
 
+  &--gold {
+    color: var(--clr-white);
+    background: #9e8959;
+  }
+
   strong {
     font-family: var(--f-avenir-pro);
   }

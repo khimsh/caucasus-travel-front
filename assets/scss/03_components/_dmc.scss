@@ -35,8 +35,14 @@
   &__links {
     margin-top: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 6px;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     a {
       width: 221px;
@@ -59,7 +65,15 @@
 .dmc-country {
   margin-top: 20px;
   &.georgia {
-    --about-img: 424px;
+    --about-img: 224px;
+
+    @media only screen and (min-width: 992px) {
+      --about-img: 324px;
+    }
+
+    @media only screen and (min-width: 1366px) {
+      --about-img: 424px;
+    }
   }
 
   &__title {
@@ -98,8 +112,16 @@
   &__about {
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: var(--about-img, 632px) 1fr;
+    grid-template-columns: var(--about-img, 232px) 1fr;
     column-gap: 32px;
+
+    @media only screen and (min-width: 992px) {
+      grid-template-columns: var(--about-img, 432px) 1fr;
+    }
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: var(--about-img, 632px) 1fr;
+    }
 
     &__images {
       display: flex;
@@ -134,8 +156,15 @@
 .dmc-section {
   &__first-eur {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
-    gap: 132px;
+    flex-direction: column;
+    gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      gap: 132px;
+    }
 
     img {
       width: 426px;
@@ -164,8 +193,13 @@
     margin-top: 190px;
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 1fr 362px;
-    column-gap: 60px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 362px;
+      column-gap: 60px;
+    }
 
     h3 {
       text-align: right;
@@ -203,7 +237,12 @@
 
     figure {
       img {
-        margin-left: auto;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 1366px) {
+          margin: unset;
+          margin-left: auto;
+        }
       }
     }
 
@@ -211,13 +250,24 @@
       margin-top: 27px;
       font-size: 16px;
       font-weight: 500;
-      text-align: right;
+      text-align: center;
+
+      @media only screen and (min-width: 1366px) {
+        text-align: right;
+      }
     }
   }
 
   &__wine {
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
 
     p {
       font-size: 16px;
@@ -229,7 +279,12 @@
   &__tamada {
     margin-bottom: 62px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     & > div {
       display: flex;
@@ -259,7 +314,12 @@
   &__noah {
     margin-bottom: 155px;
     display: grid;
-    grid-template-columns: 1fr 648px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 648px;
+    }
 
     h3 {
       text-align-last: left;
@@ -282,8 +342,13 @@
   &__brandy {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 324px 1fr 324px;
-    column-gap: 36px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 324px 1fr 324px;
+      column-gap: 36px;
+    }
 
     & > blockquote {
       display: flex;
@@ -323,8 +388,12 @@
   &__fire {
     margin: 30px 0 40px 0;
     display: grid;
-    grid-template-columns: 1fr 460px;
+    grid-template-columns: 1fr;
     gap: 30px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 460px;
+    }
 
     & > div {
       display: flex;
@@ -356,7 +425,14 @@
 
     &__images {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      @media only screen and (min-width: 1366px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }
