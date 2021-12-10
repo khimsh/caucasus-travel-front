@@ -1,6 +1,14 @@
 .tour-slider {
-  margin-top: 30px;
   position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  @media only screen and (min-width: 1366px) {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
 
   .slick-arrow {
     position: absolute;

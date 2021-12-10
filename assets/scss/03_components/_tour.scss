@@ -13,7 +13,7 @@
 
   /* width */
   &::-webkit-scrollbar {
-    height: 4px;
+    height: 6px;
   }
 
   /* Track */
@@ -34,12 +34,23 @@
   &__about {
     flex-shrink: 0;
     padding-left: 19px;
-    width: 633px;
+    width: 500px;
     height: 60px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #dfe4eb;
+
+    @media only screen and (min-width: 1366px) {
+      width: 556px;
+      height: 60px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      width: 633px;
+      height: 60px;
+    }
   }
 
   &__title {
@@ -51,7 +62,7 @@
 
   &__description {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14;
+    font-size: 14px;
     font-style: italic;
     color: #ed1f24;
   }
@@ -93,8 +104,8 @@
   }
 
   &__check {
-    flex-shrink: 1;
-    width: 100%;
+    flex-shrink: 0;
+    width: 470px;
     height: 60px;
     display: grid;
     place-content: center;
@@ -117,6 +128,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .month {

@@ -454,7 +454,7 @@ button {
   place-content: center;
   background-color: #828282;
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1366px) {
     height: 271px;
   }
 
@@ -465,7 +465,7 @@ button {
     text-transform: uppercase;
     color: var(--clr-white);
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1366px) {
       font-size: 30px;
     }
   }
@@ -479,7 +479,7 @@ button {
     width: 40px;
     height: 24px;
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1366px) {
       width: 100px;
       height: 80px;
     }
@@ -601,8 +601,13 @@ button {
 .tour {
   margin: 30px 0 32px 0;
   display: grid;
-  grid-template-columns: 1fr 274px;
-  column-gap: 30px;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+
+  @media only screen and (min-width: 1366px) {
+    grid-template-columns: 1fr 274px;
+    column-gap: 30px;
+  }
 
   &__title {
     margin-bottom: 24px;
@@ -628,7 +633,7 @@ button {
   }
 
   &__accented {
-    margin-top: -14px;
+    margin-top: 20px;
     padding: 10px 20px;
     font-family: var(--f-avenir);
     font-size: 20px;
@@ -637,6 +642,10 @@ button {
     background-color: #ff0000;
     text-align: center;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.34);
+
+    @media only screen and (min-width: 1366px) {
+      margin-top: -14px;
+    }
 
     p:not(:last-of-type) {
       margin-bottom: 10px;
@@ -655,7 +664,11 @@ button {
     gap: 22px;
 
     p {
-      text-align: right;
+      text-align: center;
+
+      @media only screen and (min-width: 1366px) {
+        text-align: right;
+      }
     }
   }
 
@@ -680,8 +693,13 @@ button {
   &__agenda {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 645px;
-    column-gap: 45px;
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+
+    @media only screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 645px;
+      column-gap: 45px;
+    }
 
     ol {
       display: flex;
@@ -880,8 +898,15 @@ button {
   margin-top: 120px;
   margin-bottom: 77px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  @media only screen and (min-width: 1366px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__request {
     width: 450px;
