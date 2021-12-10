@@ -1,10 +1,6 @@
 .container {
   padding: 0 15px;
 
-  @media only screen and (min-width: 992px) {
-    padding: 0 50px;
-  }
-
   @media only screen and (min-width: 1367px) {
     max-width: 1338px;
     margin: 0 auto;
@@ -14,8 +10,18 @@
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  column-gap: 44px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+
+  @media only screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 45px;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    grid-template-columns: repeat(4, 300px);
+  }
 }
 
 .grid-articles {
@@ -35,9 +41,17 @@
 
 .grid-team {
   display: grid;
-  grid-template-columns: repeat(4, 316px);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 24px;
   row-gap: 24px;
+
+  @media only screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (min-width: 1366px) {
+    grid-template-columns: repeat(4, 316px);
+  }
 }
 
 .tour-cards {
@@ -83,29 +97,33 @@
 
 .images-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 44px;
   row-gap: 30px;
   grid-auto-rows: 200px;
 
+  @media only screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media only screen and (min-width: 1367px) {
     grid-template-columns: repeat(4, 300px);
+
+    .span-2 {
+      grid-column: span 2;
+    }
+
+    .span-3 {
+      grid-column: span 3;
+    }
+
+    .span-4 {
+      grid-column: span 4;
+    }
   }
 
   & > div {
     background: #254e7c;
-  }
-
-  .span-2 {
-    grid-column: span 2;
-  }
-
-  .span-3 {
-    grid-column: span 3;
-  }
-
-  .span-4 {
-    grid-column: span 4;
   }
 }
 

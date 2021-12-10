@@ -1,9 +1,14 @@
 .team-member {
   &__image {
     margin-bottom: 20px;
-    width: 320px;
-    height: 430px;
+    width: 100%;
+    aspect-ratio: 10 / 13;
     overflow: hidden;
+
+    @media only screen and (min-width: 1366px) {
+      width: 320px;
+      height: 430px;
+    }
 
     img {
       width: 100%;
