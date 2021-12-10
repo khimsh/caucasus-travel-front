@@ -2,10 +2,10 @@
   &__image {
     margin-bottom: 20px;
     width: 100%;
-    aspect-ratio: 10 / 13;
+    // aspect-ratio: 10 / 13;
     overflow: hidden;
 
-    @media only screen and (min-width: 1366px) {
+    @media only screen and (min-width: 1367px) {
       width: 320px;
       height: 430px;
     }
@@ -66,4 +66,10 @@
     display: flex;
     gap: 22px;
   }
+}
+
+.team__vertical-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 2.6;
 }
