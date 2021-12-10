@@ -29,21 +29,35 @@ button {
   padding: 25px 0 29px 0;
 
   .container {
-    padding-left: 64px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    @media only screen and (min-width: 992px) {
+      padding-left: 64px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__languages {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+
+    @media only screen and (min-width: 992px) {
+      gap: 40px;
+    }
 
     &__title {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
+
+      @media only screen and (min-width: 992px) {
+        gap: 20px;
+      }
 
       svg {
         display: block;
@@ -772,50 +786,6 @@ button {
   }
 }
 
-.news-board {
-  margin: 30px 0 40px 0;
-
-  &__heading {
-    margin-bottom: 30px;
-    height: 60px;
-    background: #ffc000;
-
-    span {
-      font-size: 30px;
-      text-transform: uppercase;
-      color: var(--clr-white);
-    }
-
-    h2 {
-      position: relative;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    svg {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 140px;
-    }
-  }
-
-  &__grid {
-    display: grid;
-    grid-template-columns: 215px 420px 642px;
-    grid-template-rows: 173px 173px;
-    column-gap: 30px;
-    row-gap: 15px;
-
-    .span-y-full {
-      grid-column: 2/3;
-      grid-row: 1/3;
-    }
-  }
-}
-
 .banner {
   height: 570px;
   display: flex;
@@ -884,6 +854,52 @@ button {
         font-size: 14px;
         text-align: center;
         color: var(--clr-black);
+      }
+    }
+  }
+}
+
+.home-about-us {
+  margin-bottom: 40px;
+
+  &__left {
+    display: none;
+
+    @media only screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+
+      @media only screen and (min-width: 1367px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.home-invitation {
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      font-family: var(--f-avenir-demi);
+      font-size: 16px;
+      font-weight: 500;
+      color: #5b5b5b;
+
+      @media only screen and (min-width: 1367px) {
+        font-size: 20px;
       }
     }
   }
