@@ -1258,6 +1258,16 @@ button {
   text-decoration: underline;
 }
 
+.covid-reg {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.covid-reg p {
+  text-transform: uppercase;
+}
+
 .tar {
   text-align: right;
 }

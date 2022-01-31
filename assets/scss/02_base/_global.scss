@@ -1033,3 +1033,14 @@ button {
     text-decoration: underline;
   }
 }
+
+.covid-reg {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    text-transform: uppercase;
+  }
+}
