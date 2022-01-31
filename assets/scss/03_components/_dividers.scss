@@ -1,15 +1,21 @@
 .divider-text {
   padding: 12px 0;
-  font-size: 16px;
+  // font-size: 16px;
+  font-size: 30px;
   text-align: center;
 
-  @media only screen and (min-width: 1367px) {
+  @media only screen and (max-width: 1400px) {
     font-size: 18px;
   }
 
   &--gray {
     color: var(--clr-white);
+    font-size: 18px !important;
     background: #707070;
+
+    @media only screen and (max-width: 1400px) {
+      font-size: 16px;
+    }
   }
 
   &--gold {
